@@ -29,7 +29,9 @@ export default Vue.extend({
 	},
 	methods:{
 		scrollSencer(){
-			if(window.scrollY >= 100){
+      console.log(this.$router.resolve.name)
+			if((window.scrollY >= 100) && (this.$route.name == "Top")){
+        console.log("if")
 				this.$router.replace({
 					path: '/body'
 				})
