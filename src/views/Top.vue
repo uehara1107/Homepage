@@ -1,5 +1,6 @@
 <template>
 <div class="top">
+	<Header />
 	<v-row justify="center" class="top-title">
 		<v-col align="center">
 			<img width="1000px" src="../../public/name.png">
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
 export default {
 	data(){
 		return{
@@ -25,6 +27,7 @@ export default {
 		}
 	},
 	components:{
+		Header
 	},
 }
 </script>
