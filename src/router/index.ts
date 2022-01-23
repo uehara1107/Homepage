@@ -23,11 +23,6 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/Skill.vue')
   },
   {
-    path: '/body',
-    name: 'Body',
-    component: () => import('../views/Body.vue')
-  },
-  {
     path: '/contact',
     name: 'Contact',
     component: () => import('../views/Contact.vue')
