@@ -36,7 +36,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: '/top',
+  base: '/uehara',
   routes
 })
 
