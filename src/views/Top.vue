@@ -2,12 +2,12 @@
 <div class="top">
 	<v-row justify="center" class="top-title">
 		<v-col align="center">
-			<img width="1000px" v-bind:src="nameImg">
+			<img width="1000px" src="../../public/name.png">
 		</v-col>
 	</v-row>
 	<v-row justify="center">
 		<v-col align="center" class="top-msg">
-			<img width="600px" v-bind:src="msgImg">
+			<img width="600px" src="../../public/message.png">
 		</v-col>
 	</v-row>
 	<v-row justify="center" class="scl-msg">
@@ -21,8 +21,7 @@
 export default {
 	data(){
 		return{
-			nameImg: require('@/assets/name.png'),
-			msgImg: require('@/assets/message.png'),
+
 		}
 	},
 	components:{
