@@ -3,28 +3,28 @@
     <Header />
     <div class="about-area">
       <v-row justify="center">
-        <v-col lg="6" md="6" sm="12" xs="12" align="center" class="kao-img">
+        <v-img max-width="800px" v-bind:src="aisatuImg" />
+      </v-row>
+      <v-row justify="center">
+        <v-col lg="6" md="6" sm="12" xs="12" align="center" class="img">
           <v-row justify="center">            
-            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="kao-img">
-            <v-img max-width="400px" v-bind:src="kaoImg" />
+            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="img">
+            <v-img max-width="600px" v-bind:src="kaoImg" />
             </v-col>
-            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="kao-img">
-            <v-img max-width="300px" v-bind:src="kaoImg" />
+            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="img">
+            <v-img max-width="350px" v-bind:src="imgOne" />
             </v-col>
           </v-row>
           <v-row justify="center">
-            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="kao-img">
-            <v-img max-width="300px" v-bind:src="kaoImg" />
+            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="img">
+            <v-img max-width="350px" v-bind:src="imgTwo" />
             </v-col>
-            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="kao-img">
-            <v-img max-width="400px" v-bind:src="kaoImg" />
+            <v-col lg="6" md="6" sm="12" xs="12" align="center" class="img">
+            <v-img max-width="600px" v-bind:src="imgThree" />
             </v-col>
           </v-row>
         </v-col>
         <v-col lg="6" md="6" sm="12" xs="12" align="center" class="about-value">
-          <v-row justify="center">
-            <v-img max-width="600px" v-bind:src="aisatuImg" />
-          </v-row>
           <v-row justify="center">
             <p class="b-title">ABOUT ME</p>
           </v-row>
@@ -51,7 +51,7 @@
             <p class="s-title">趣味</p>
           </v-row>
           <v-row justify="center">
-            <p>オタク活動</p>
+            <p>オタク活動・写真を撮ること</p>
           </v-row>
           <v-row justify="center">
             <p class="s-title">すき</p>
@@ -102,6 +102,9 @@ export default {
   data(){
     return{
       kaoImg: require('@/assets/me.png'),
+      imgOne: require('@/assets/img1.png'),
+      imgTwo: require('@/assets/img3.png'),
+      imgThree: require('@/assets/img2.png'),
       aisatuImg: require('@/assets/aisatu.png')
     }
   }
@@ -111,19 +114,25 @@ export default {
 
 <style>
 .about-area{
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 150px;
 }
-.b-title{
+.imp{
   font-size: 20pt;
+  padding: 10px;
+}
+.b-title{
+  font-size: 30pt;
 }
 .s-title{
-  font-size: 15pt;
+  border-bottom: solid 1pt;
+  font-size: 18pt;
 }
-.kao-img{
-  margin-top: 60px;
+.img{
+  margin-top: 35px;
 }
 .about-value{
-  font-size: 15pt;
+  font-size: 14pt;
+  margin-top: 80px;
 }
 </style>

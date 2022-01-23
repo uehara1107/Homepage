@@ -33,7 +33,7 @@ export default Vue.extend({
 			if((window.scrollY >= 100) && (this.$route.name == "Top")){
         console.log("if")
 				this.$router.replace({
-					path: '/body'
+					path: '/about'
 				})
       }
     }
